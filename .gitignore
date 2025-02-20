@@ -1,0 +1,13 @@
+# Terraform
+.terraform/
+terraform.tfstate*
+.terraform.lock.hcl
+
+# Kubernetes
+k8s/*.log
+
+# Ansible
+*.retry
+
+# Node.js
+node_modules/

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build: ./services/auth-service
+    ports:
+      - "3001:3000"
+    networks:
+      - backend
+
+  user-service:
+    build: ./services/user-service
+    ports:
+      - "3002:3000"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+
